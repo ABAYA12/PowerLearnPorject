@@ -38,3 +38,24 @@ phone2.call("987-654-321")
 phone2.take_photo()
 phone2.set_price(1100)
 print("New Price:", phone2.get_price())
+
+
+
+class Car:
+    def move(self):
+        print("Driving on the road...")
+
+class Plane:
+    def move(self):
+        print("✈Flying in the sky...")
+
+class Boat:
+    def move(self):
+        print("Sailing on the water...")
+
+# List of vehicles
+vehicles = [Car(), Plane(), Boat()]
+
+# Polymorphism in action
+for vehicle in vehicles:
+    vehicle.move()
